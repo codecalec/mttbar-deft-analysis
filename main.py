@@ -12,6 +12,7 @@ from data import get_CMS_data, get_CMS_cov, get_MC_signal
 MC_PATH = "/home/agv/Documents/Honours/Project/data_generation/ttbar_ctg"
 DATA_PATH = Path("/home/agv/Documents/Honours/Project/data/1811.06625/")
 
+
 def generate_json(mc_path, data_path, ctg_list, filename):
     import json
 
@@ -49,11 +50,12 @@ def generate_json(mc_path, data_path, ctg_list, filename):
         predictions[i] = values_mc.tolist()
     output_dict["config"]["model"]["predictions"] = predictions
 
-    output_dict["config"]["model"]["prior_limits"] = {"ctg": [-2.0, 2.0]}
+    output_dict["config"]["model"]["prior_limits"] = {"$c_{tG}$": [-2.0, 2.0]}
 
 
     with open(filename, "w") as f:
         json.dump(output_dict, f, indent=4)
+
 
 def run_analysis(filename):
 
@@ -76,6 +78,7 @@ def run_analysis(filename):
         )
     )
 
+    deft.SummaryPlotter(config, pb, sampler)
 
 
 if __name__ == "__main__":
