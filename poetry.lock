@@ -207,6 +207,17 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "scienceplots"
+version = "1.0.7"
+description = "Format Matplotlib for scientific plotting"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+matplotlib = "*"
+
+[[package]]
 name = "scikit-learn"
 version = "0.24.2"
 description = "A set of python modules for machine learning and data mining"
@@ -292,8 +303,8 @@ python-versions = "*"
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.9"
-content-hash = "8a16ed5c2fb02cc5c09e8aed5221cf4eda7972abedb71fff5809c266ea0a1f96"
+python-versions = "^3.8"
+content-hash = "0dc12b97ea27144e6eac6b2539e67029e1f28ddc261d405091ff3eca4cd320ad"
 
 [metadata.files]
 appdirs = [
@@ -523,6 +534,9 @@ regex = [
     {file = "regex-2021.4.4-cp39-cp39-win32.whl", hash = "sha256:fa4537fb4a98fe8fde99626e4681cc644bdcf2a795038533f9f711513a862ae6"},
     {file = "regex-2021.4.4-cp39-cp39-win_amd64.whl", hash = "sha256:97f29f57d5b84e73fbaf99ab3e26134e6687348e95ef6b48cfd2c06807005a07"},
     {file = "regex-2021.4.4.tar.gz", hash = "sha256:52ba3d3f9b942c49d7e4bc105bb28551c44065f139a65062ab7912bef10c9afb"},
+]
+scienceplots = [
+    {file = "SciencePlots-1.0.7.tar.gz", hash = "sha256:cf2a8985372c33e4499909ab36547dc5042fd276a278f69d851c1e4ce7a936b4"},
 ]
 scikit-learn = [
     {file = "scikit-learn-0.24.2.tar.gz", hash = "sha256:d14701a12417930392cd3898e9646cf5670c190b933625ebe7511b1f7d7b8736"},

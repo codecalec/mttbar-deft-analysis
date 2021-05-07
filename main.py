@@ -1,10 +1,11 @@
+import sys
 from pathlib import Path
 import glob
 
 import numpy as np
 import matplotlib.pyplot as plt
 
-plt.style.use("science")
+# plt.style.use("science")
 
 from data import get_CMS_data, get_CMS_cov, get_MC_signal
 
@@ -19,7 +20,7 @@ def generate_json(mc_path, data_path, ctg_list, filename):
     output_dict = {
         "config": {
             "run_name": "CMS-TOP-ctg",
-            "data": {"observable": "$\\sigma t\\bar{t}$"},
+            "data": {"observable": "$m_{t\\bar{t}}$"},
             "model": {
                 "input": "numpy",
                 "inclusive_k_factor": 1,
@@ -50,7 +51,7 @@ def generate_json(mc_path, data_path, ctg_list, filename):
         predictions[i] = values_mc.tolist()
     output_dict["config"]["model"]["predictions"] = predictions
 
-    output_dict["config"]["model"]["prior_limits"] = {"$c_{tG}$": [-2.0, 2.0]}
+    output_dict["config"]["model"]["prior_limits"] = {"c_{tG}": [-2.0, 2.0]}
 
 
     with open(filename, "w") as f:
@@ -87,7 +88,9 @@ if __name__ == "__main__":
     file_list = glob.glob(MC_PATH + "/run_*_LO/*.HwU")
 
     config_filename = "ttbar_ctg.json"
-
-    generate_json(file_list, DATA_PATH, ctg_list, config_filename)
-
-    run_analysis(config_filename)
+    
+    if len(sys.argv) <= 1:
+        run_analysis(config_filename)
+    elif len(sys.argv) <= 2:
+        if sys.argv[1] == "config":
+            generate_json(file_list, DATA_PATH, ctg_list, config_filename)

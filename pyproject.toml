@@ -5,11 +5,12 @@ description = ""
 authors = ["Alex Veltman"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.8"
 numpy = "^1.20.2"
 matplotlib = "^3.4.1"
 pandas = "^1.2.4"
-deft-hep = "^0.1.0"
+SciencePlots = "^1.0.7"
+deft-hep = "^0.2.0"
 
 [tool.poetry.dev-dependencies]
 black = "^20.8b1"
