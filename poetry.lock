@@ -66,7 +66,7 @@ six = "*"
 
 [[package]]
 name = "deft-hep"
-version = "0.2.0"
+version = "0.3.1"
 description = "dEFT is a tool for performing fits of EFT coefficients to HEP data in seconds"
 category = "main"
 optional = false
@@ -250,7 +250,7 @@ numpy = ">=1.16.5"
 
 [[package]]
 name = "six"
-version = "1.15.0"
+version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
 category = "main"
 optional = false
@@ -304,7 +304,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "0dc12b97ea27144e6eac6b2539e67029e1f28ddc261d405091ff3eca4cd320ad"
+content-hash = "0ebf0ef593ad631e648be267ebb247cb6211caa4221fedfcb3f21ecf4dd37c70"
 
 [metadata.files]
 appdirs = [
@@ -327,8 +327,8 @@ cycler = [
     {file = "cycler-0.10.0.tar.gz", hash = "sha256:cd7b2d1018258d7247a71425e9f26463dfb444d411c39569972f4ce586b0c9d8"},
 ]
 deft-hep = [
-    {file = "dEFT-hep-0.2.0.tar.gz", hash = "sha256:470cd2f079373d67faea6d4d4ac62abb901c52db7b25270e72e77583e1b1f12f"},
-    {file = "dEFT_hep-0.2.0-py3-none-any.whl", hash = "sha256:91d2148d8048474fa7e6494f316504b2ba9398d59f16ea8648f01da07310cd1b"},
+    {file = "dEFT-hep-0.3.1.tar.gz", hash = "sha256:20ea77aa42d420825181d3bbf61c53e6ec6ef99e48662d25bba607e38929e7bd"},
+    {file = "dEFT_hep-0.3.1-py3-none-any.whl", hash = "sha256:22bcbee42ed8c0f0253b8fa7d216b9826678e191363137c34ce532a6913490e4"},
 ]
 emcee = [
     {file = "emcee-3.0.2-py2.py3-none-any.whl", hash = "sha256:bffaa2e1830d90f4e2ae42ca8db9bef67b73eefe90bdedacf58c9a1977966184"},
@@ -595,8 +595,8 @@ scipy = [
     {file = "scipy-1.6.1.tar.gz", hash = "sha256:c4fceb864890b6168e79b0e714c585dbe2fd4222768ee90bc1aa0f8218691b11"},
 ]
 six = [
-    {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},
-    {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
+    {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
+    {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
 ]
 threadpoolctl = [
     {file = "threadpoolctl-2.1.0-py3-none-any.whl", hash = "sha256:38b74ca20ff3bb42caca8b00055111d74159ee95c4370882bbff2b93d24da725"},

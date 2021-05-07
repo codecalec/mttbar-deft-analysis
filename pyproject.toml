@@ -10,7 +10,7 @@ numpy = "^1.20.2"
 matplotlib = "^3.4.1"
 pandas = "^1.2.4"
 SciencePlots = "^1.0.7"
-deft-hep = "^0.2.0"
+deft-hep = "^0.3.1"
 
 [tool.poetry.dev-dependencies]
 black = "^20.8b1"
